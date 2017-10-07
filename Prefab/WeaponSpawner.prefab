@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1114282679434786}
+  m_IsPrefabParent: 1
+--- !u!1 &1114282679434786
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4670169640381562}
+  - component: {fileID: 114358870093928110}
+  m_Layer: 0
+  m_Name: WeaponSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4670169640381562
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1114282679434786}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.52, y: -3.16, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114358870093928110
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1114282679434786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c2697993d45f4797aa7d0615591d96f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapon: {fileID: 114151918045241344, guid: 70252721c2fdb4dc4ab78b33101ae578, type: 2}
+  nbWeapon: 12
+  Image:
+  - {fileID: 21300000, guid: 3a582ad63bf63437ca436507f3c5fbe8, type: 3}
+  - {fileID: 21300000, guid: b99032e6f1f9a49e5adb932489c76376, type: 3}
+  - {fileID: 21300000, guid: b3a7603c6d0094fde9abd4be77961bde, type: 3}
+  - {fileID: 21300000, guid: 8a622f5704cb14b10b0748976caad92c, type: 3}
+  - {fileID: 21300000, guid: f47402979bf234b2d8a7c4f680d637d0, type: 3}
+  - {fileID: 21300000, guid: 4896040e166334f77bce916ed5362b68, type: 3}
+  - {fileID: 21300000, guid: 8da9544e34ded44278465c6536fd852b, type: 3}
+  - {fileID: 21300000, guid: afebc235a4c8e420d8a46351da0a4b3f, type: 3}
+  - {fileID: 21300000, guid: f372e2dcfd0bf421e9dc0c446e65b1d0, type: 3}
+  - {fileID: 21300000, guid: f8b52bf803885439b97e16a867b6af83, type: 3}
+  - {fileID: 21300000, guid: d27f7bd0c8e074f57a690c6e9e6e1d3a, type: 3}
+  - {fileID: 21300000, guid: c20a163f10788422da8ba44d35fe4a39, type: 3}
+  Attach:
+  - {fileID: 21300000, guid: 43a139c7bee644f6f96d3ce30cc7cc15, type: 3}
+  - {fileID: 21300000, guid: 2775ead70e19f415884382d7d0911c04, type: 3}
+  - {fileID: 21300000, guid: 998863868c48d4acb8825638c9fe303c, type: 3}
+  - {fileID: 21300000, guid: e3140efe7137c48f8801a03d57bcc3d9, type: 3}
+  - {fileID: 21300000, guid: 6a80894c63238427280b822e403bcc63, type: 3}
+  - {fileID: 21300000, guid: 5e114d784ad9241b3b5c1072454ff4ef, type: 3}
+  - {fileID: 21300000, guid: 45311f9076bbc430e97a856761c1dec0, type: 3}
+  - {fileID: 21300000, guid: a315ebc2f13264de1ad811d9026e0221, type: 3}
+  - {fileID: 21300000, guid: 4bbcc50c9920a45f19aaf626e7a8c59c, type: 3}
+  - {fileID: 21300000, guid: 3581680fef4f648cc9d5fd17a09d9d6a, type: 3}
+  - {fileID: 21300000, guid: a6bb0ee89f1054bb7820664bbd8772a9, type: 3}
+  - {fileID: 21300000, guid: baaeab92311a94614a65b9c137e54777, type: 3}
+  Bullet:
+  - {fileID: 21300000, guid: 4b5fba961acb6452aaabf2a6f96856a1, type: 3}
+  - {fileID: 21300000, guid: baf659e9ad4e34fbdb3fb0dd0b7d4fb1, type: 3}
+  - {fileID: 21300000, guid: 8010373ff752c4a4b8a10ad4166b8ed7, type: 3}
+  - {fileID: 21300000, guid: 6e6cd268a39814164b43e97b0f7a3727, type: 3}
+  - {fileID: 21300000, guid: f1ca17da23b794eb48e841207ed79302, type: 3}
+  - {fileID: 21300000, guid: 0ae94501a054d4ee4afbb8e536f53a76, type: 3}
+  - {fileID: 21300000, guid: 4584cc037c60a488da1747a1bdc4eafd, type: 3}
+  - {fileID: 21300000, guid: 8decb5a550087491e961fbd84390cc8e, type: 3}
+  - {fileID: 21300000, guid: 4ed1bb74228404a5bbc1ab9d552593d7, type: 3}
+  - {fileID: 21300000, guid: f1a88cbf19a5c4119bdf4497d2a96fae, type: 3}
+  - {fileID: 21300000, guid: e965b9e9be6b84215a459a119303fd98, type: 3}
+  - {fileID: 21300000, guid: 3701e164151f34477a7f3cfc00fe0dfe, type: 3}
+  MaxAmmo: 050000000500000005000000050000000500000005000000050000000500000005000000050000000500000005000000
+  bMelee: 000000000100000000000001
+  FireRate:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  FireSpeed:
+  - 50
+  - 50
+  - 50
+  - 50
+  - 50
+  - 50
+  - 50
+  - 50
+  - 50
+  - 50
+  - 50
+  - 50
