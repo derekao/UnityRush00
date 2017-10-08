@@ -26,6 +26,17 @@ public class Weapon : MonoBehaviour
 	// Use this for initialization
 	void Start () 
 	{
+		int rd = Random.Range(0, WeaponParam.instance.nbWeapon);
+
+		Image = WeaponParam.instance.Image[rd];
+		Attach = WeaponParam.instance.Attach[rd];
+		Bullet = WeaponParam.instance.Bullet[rd];
+		MaxAmmo = WeaponParam.instance.MaxAmmo[rd];
+		CurrentAmmo = WeaponParam.instance.MaxAmmo[rd];
+		bMelee = WeaponParam.instance.bMelee[rd];
+		FireRate = WeaponParam.instance.FireRate[rd];
+		FireSpeed = WeaponParam.instance.FireSpeed[rd];
+
 		Texture = GetComponent<SpriteRenderer>();
 	}
 
@@ -82,9 +93,22 @@ public class Weapon : MonoBehaviour
 
 		Shot go =  GameObject.Instantiate (shot,  new Vector3(transform.position.x +  2 * diff.x, transform.position.y+ 2 * diff.y, 0), tmp);
 
-		Rigidbody2D rb = go.GetComponent<Rigidbody2D>();
-		Debug.Log (FireSpeed);
-		rb.velocity = new Vector3 (diff.x,diff.y,0) * FireSpeed;
+		if (!bMelee)
+		{
+			Rigidbody2D rb = go.GetComponent<Rigidbody2D> ();
+			rb.velocity = new Vector3 (diff.x, diff.y, 0) * FireSpeed;
+		}
+		else
+		{
+			StartCoroutine(wait(go));
+		}
+	}
+
+	IEnumerator wait(Shot go)
+	{
+		yield return new WaitForSeconds (0.1f);
+		if (go)
+			GameObject.Destroy (go.gameObject);
 	}
 
 }
