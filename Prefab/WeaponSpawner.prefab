@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4670169640381562}
-  - component: {fileID: 114358870093928110}
+  - component: {fileID: 114391783177090276}
   m_Layer: 0
   m_Name: WeaponSpawner
   m_TagString: Untagged
@@ -34,13 +34,13 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1114282679434786}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.52, y: -3.16, z: -10}
+  m_LocalPosition: {x: -7.1658506, y: 3.5714178, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114358870093928110
+--- !u!114 &114391783177090276
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -48,10 +48,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1114282679434786}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c2697993d45f4797aa7d0615591d96f, type: 3}
+  m_Script: {fileID: 11500000, guid: fe2497359591f4833ae002b302e5d30b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weapon: {fileID: 114151918045241344, guid: 70252721c2fdb4dc4ab78b33101ae578, type: 2}
   nbWeapon: 12
   Image:
   - {fileID: 21300000, guid: 3a582ad63bf63437ca436507f3c5fbe8, type: 3}
@@ -92,7 +91,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f1a88cbf19a5c4119bdf4497d2a96fae, type: 3}
   - {fileID: 21300000, guid: e965b9e9be6b84215a459a119303fd98, type: 3}
   - {fileID: 21300000, guid: 3701e164151f34477a7f3cfc00fe0dfe, type: 3}
-  MaxAmmo: 050000000500000005000000050000000500000005000000050000000500000005000000050000000500000005000000
+  MaxAmmo: 0a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a000000
   bMelee: 000000000100000000000001
   FireRate:
   - 1
